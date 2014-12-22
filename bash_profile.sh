@@ -15,16 +15,19 @@ alias ls="ls -aF" # show hidden files
 
 alias dropbox="cd ~/Dropbox"
 alias desktop="cd ~/Desktop"
+alias html5="cd ~/Dropbox/ressourcen/programming/html/html5"
+alias mamp="cd /Applications/MAMP/htdocs"
 alias ressourcen="cd ~/Dropbox/ressourcen"
 alias terminal="cd ~/Dropbox/ressourcen/terminal/profile"
-alias html5="cd ~/Dropbox/ressourcen/programming/html/html5-boilerplate"
 
 # GIT
 alias gs="git status"
-alias co="checkout"
-alias br="branch"
-alias cm="git commit -m"
+alias com="git commit -a -m"
+alias che="git checkout"
+alias cob="git checkout -b" # checkout new branch
+alias gitl="git log --oneline --decorate"
 alias unstage="reset HEAD --"
+alias amend="git commit -a --amend" #modify previous commit
 
 alias edit='subl' # opens any file in Sublime
 

@@ -5,20 +5,31 @@ export PS1="\[\033[0;31m\]\! \u \[\033[0;34m\]\w \[\033[0m\]\$ " # u = username 
 # Set PATH
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
+# Take it form here:
+
 # Set default Editor
 export EDITOR=/usr/bin/nano
+alias edit='subl' # opens any file in Sublime
 
 # Alias
-alias ~="cd ~" # go home
-alias c="clear" # clear terminal display
-alias ls="ls -aF" # show hidden files
+alias rprofile=". ~/.bash_profile"
+alias profile="edit ~/.bash_profile"
 
+# Locations
+alias ~="cd ~" # go home
 alias dropbox="cd ~/Dropbox"
 alias desktop="cd ~/Desktop"
 alias html5="cd ~/Dropbox/ressourcen/programming/html/html5"
 alias mamp="cd /Applications/MAMP/htdocs"
 alias ressourcen="cd ~/Dropbox/ressourcen"
 alias terminal="cd ~/Dropbox/ressourcen/terminal/profile"
+
+# shorthands
+alias c='clear' # clear terminal display
+alias ls='ls -aF' # show hidden files
+alias f='open -a Finder ./' # f:Opens current directory in MacOS Finder
+alias getmyip='curl ipecho.net/plain; echo' #display public ip
+alias copyssh='pbcopy < ~/.ssh/id_rsa.pub' # copy ssh key to clipboard
 
 # GIT
 alias gs="git status"
@@ -28,13 +39,6 @@ alias cob="git checkout -b" # checkout new branch
 alias gitl="git log --oneline --decorate"
 alias unstage="reset HEAD --"
 alias amend="git commit -a --amend" #modify previous commit
-
-alias edit='subl' # opens any file in Sublime
-
-alias rprofile=". ~/.bash_profile"
-alias profile="edit ~/.bash_profile"
-
-alias f='open -a Finder ./' # f:Opens current directory in MacOS Finder
 
 # colors
 

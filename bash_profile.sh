@@ -51,12 +51,6 @@ resize() { sips -Z "$1" *.jpg; }
 
 # UBERSPACE
 
-## SSH
-
-alias anteante="ssh anteante@eltanin.uberspace.de"
-alias holler="ssh holler@alphard.uberspace.de"
-alias fonorum="ssh fonorum@arcturus.uberspace.de"
-
 gotoroot() { cd /var/www/virtual/"$1"; }
 adddomain() { uberspace-add-domain -d "$1" "$2"; } # $1 = domainname, $2 = -w or -m
 listdomains() { uberspace-list-domains "$1"; } # -w or -m

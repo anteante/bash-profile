@@ -37,12 +37,14 @@ alias getssh="pbcopy < ~/.ssh/id_rsa.pub"
 
 # GIT
 alias gs="git status"
-alias com="git commit -a -m"
-alias che="git checkout"
-alias cob="git checkout -b" # checkout new branch
+alias gm="git commit -a -m"
+alias gc="git checkout"
+alias gcb="git checkout -b" # checkout new branch
+alias gpom="git push origin master" # checkout new branch
 alias gitl="git log --oneline --decorate"
 alias unstage="reset HEAD --"
 alias amend="git commit -a --amend" #modify previous commit
+
 
 # FUNCTIONS
 
